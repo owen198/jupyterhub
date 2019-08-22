@@ -52,7 +52,7 @@ RUN pip install . && \
     rm -rf $PWD ~/.cache ~/.npm
 
 RUN pip install oauthenticator
-
+RUN pip install tornado==5.1.1
 RUN mkdir -p /srv/jupyterhub/
 WORKDIR /srv/jupyterhub/
 EXPOSE 8000
