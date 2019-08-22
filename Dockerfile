@@ -51,6 +51,8 @@ WORKDIR /src/jupyterhub
 RUN pip install . && \
     rm -rf $PWD ~/.cache ~/.npm
 
+RUN pip install oauthenticator
+
 RUN mkdir -p /srv/jupyterhub/
 WORKDIR /srv/jupyterhub/
 EXPOSE 8000
