@@ -53,6 +53,10 @@ RUN pip install . && \
 
 RUN pip install oauthenticator
 RUN pip install tornado==5.1.1
+RUN pip install jupyter_client
+RUN pip install dockerspawner
+
+
 RUN mkdir -p /srv/jupyterhub/
 WORKDIR /srv/jupyterhub/
 EXPOSE 8000
